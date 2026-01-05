@@ -3,59 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduPremium | The Future of Learning</title>
+    <title>The EduNexus | Ultimate Official Learning Platform</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav id="navbar">
-        <div class="logo">EDU<span>PREMIUM</span></div>
+        <div class="logo">EDU<span>NEXUS</span></div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Mentors</a></li>
-            <li><a href="#" class="btn-glass">Get Started</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#mentors">Mentors</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact" class="btn-cta">Enroll Now</a></li>
         </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-text" data-aos="fade-up" data-aos-duration="1500">
-            <span class="badge">Official E-Learning Platform</span>
-            <h1>Unlock Your <br> <span class="gradient-text">Future Potential</span></h1>
-            <p>Premium courses designed by industry experts with international certifications.</p>
-            <div class="hero-btns">
-                <button class="btn-main">Explore Now</button>
-                <button class="btn-outline">Watch Demo</button>
+    <section id="home" class="hero-section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-students-working-together-in-the-university-library-4299-large.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <span class="tagline">The Official Gateway to Knowledge</span>
+            <h1>Ignite Your Future <br> with <span class="gradient-text">Premium Education</span></h1>
+            <p>Access cutting-edge courses, expert guidance, and a global community.</p>
+            <div class="hero-buttons">
+                <a href="#programs" class="btn-primary">Explore Programs</a>
+                <a href="#about" class="btn-secondary">Learn More <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
-    <section class="features">
+    <section id="about" class="about-section">
         <div class="container">
-            <h2 data-aos="fade-down">Why Choose Us?</h2>
-            <div class="grid">
-                <div class="card" data-aos="zoom-in-up" data-aos-delay="100">
-                    <div class="icon">🚀</div>
-                    <h3>Fast Learning</h3>
-                    <p>Optimized curriculum for quick skill mastery.</p>
+            <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                <img src="https://images.unsplash.com/photo-1517245381794-ae17672bb652?auto=format&fit=crop&w=800&q=80" alt="Students Learning">
+            </div>
+            <div class="about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                <span class="section-tag">ABOUT US</span>
+                <h2>We're Revolutionizing <br> Digital Learning</h2>
+                <p>EduNexus is a leading official platform dedicated to providing high-quality, accessible education worldwide. Our meticulously crafted curricula and expert instructors ensure you gain practical skills for tomorrow's challenges.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Globally Recognized Certifications</li>
+                    <li><i class="fas fa-check-circle"></i> Industry-Leading Mentors</li>
+                    <li><i class="fas fa-check-circle"></i> Flexible Learning Paths</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Join Our Community</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-users"></i>
+                <h3 class="counter" data-target="25000">0</h3>
+                <p>Happy Students</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3 class="counter" data-target="180">0</h3>
+                <p>Expert Mentors</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                <i class="fas fa-graduation-cap"></i>
+                <h3 class="counter" data-target="750">0</h3>
+                <p>Online Courses</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="700">
+                <i class="fas fa-award"></i>
+                <h3 class="counter" data-target="100">0</h3>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-down">Our Flagship Programs</h2>
+            <p class="section-subheading" data-aos="fade-down" data-aos-delay="200">Explore diverse learning paths designed for your success.</p>
+
+            <div class="tabs" data-aos="fade-up" data-aos-delay="300">
+                <button class="tab-button active" data-tab="web">Web Development</button>
+                <button class="tab-button" data-tab="data">Data Science</button>
+                <button class="tab-button" data-tab="design">UI/UX Design</button>
+                <button class="tab-button" data-tab="marketing">Digital Marketing</button>
+            </div>
+
+            <div class="tab-content active" id="web">
+                <div class="course-grid">
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4632ef3ee442?auto=format&fit=crop&w=400&q=60" alt="Full Stack Course">
+                        <h3>Full Stack Web Dev</h3>
+                        <p>Build dynamic websites from front-end to back-end.</p>
+                        <div class="course-meta"><i class="fas fa-clock"></i> 6 Months <i class="fas fa-star"></i> 4.9</div>
+                        <a href="#" class="btn-card">View Details</a>
+                    </div>
                 </div>
-                <div class="card" data-aos="zoom-in-up" data-aos-delay="300">
-                    <div class="icon">🏆</div>
-                    <h3>Official Docs</h3>
-                    <p>Verified certificates recognized globally.</p>
-                </div>
-                <div class="card" data-aos="zoom-in-up" data-aos-delay="500">
-                    <div class="icon">💎</div>
-                    <h3>Premium Access</h3>
-                    <p>Exclusive resources and 1-on-1 mentorship.</p>
+            </div>
+            <div class="tab-content" id="data">
+                <div class="course-grid">
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1526628953676-ad185a7309f0?auto=format&fit=crop&w=400&q=60" alt="Data Science Course">
+                        <h3>Advanced Data Science</h3>
+                        <p>Analyze data and build predictive models with Python.</p>
+                        <div class="course-meta"><i class="fas fa-clock"></i> 8 Months <i class="fas fa-star"></i> 4.8</div>
+                        <a href="#" class="btn-card">View Details</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 EduPremium Official. Designed for Excellence.</p>
+    <section class="cta-section" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="container">
+            <h2>Ready to Transform Your Career?</h2>
+            <p>Enroll in our programs and start your journey towards professional excellence.</p>
+            <a href="#contact" class="btn-cta-large">Get Started Today!</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-down">What Our Students Say</h2>
+            <p class="section-subheading" data-aos="fade-down" data-aos-delay="200">Hear from our successful graduates around the world.</p>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"EduNexus changed my life! The mentors are fantastic, and the curriculum is so practical. I landed my dream job within months."</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Student Avatar">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"The data science course here is unparalleled. The hands-on projects gave me the confidence to excel in a competitive field."</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student Avatar">
+                        <div>
+                            <h4>Arjun Kumar</h4>
+                            <span>Data Analyst</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-down">Latest From Our Blog</h2>
+            <p class="section-subheading" data-aos="fade-down" data-aos-delay="200">Stay updated with the latest trends and insights.</p>
+            <div class="blog-grid">
+                <div class="blog-post-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1507238691740-b52a2f77e684?auto=format&fit=crop&w=400&q=60" alt="Blog Post 1">
+                    <div class="post-info">
+                        <h3>The Rise of AI in Education</h3>
+                        <span><i class="fas fa-calendar-alt"></i> Jan 22, 2024</span>
+                        <p>Explore how artificial intelligence is transforming learning experiences.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-down">Get In Touch</h2>
+            <p class="section-subheading" data-aos="fade-down" data-aos-delay="200">Have questions? We're here to help you.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Learning Ave, Knowledge City, World</p>
+                    <p><i class="fas fa-envelope"></i> info@edunexus.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (123) 456-7890</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Send Us A Message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Your Message" rows="5"></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand" data-aos="fade-right">
+                    <h3>EDU<span>NEXUS</span></h3>
+                    <p>Your trusted partner in online education. Empowering minds globally.</p>
+                </div>
+                <div class="footer-links-group" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Courses</a></li>
+                        <li><a href="#mentors">Our Team</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter" data-aos="fade-left" data-aos-delay="300">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for latest updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The EduNexus. All Rights Reserved. Built with ❤️ for Azmiipapers.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
